@@ -1,7 +1,7 @@
 # 1만 시간의 법칙
 
 ## 배포링크
-- URL
+URL : https://seulgi626.github.io/time/
 
 1. 시멘틱 마크업
 - header: 페이지의 제목과 주요 로고 영역
