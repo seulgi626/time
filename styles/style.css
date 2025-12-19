@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "OTEnjoystoriesBA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+    format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+    format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+    format("opentype");
+}
+
+:root {
+    --bg-color: #5B2386;
+    --yellow-color: #FCEE21;
+    --white-color: #FFFFFF;
+    --text-color: #FFFFFF;
+    --font-main: 'Noto Sans KR', sans-serif;
+    --font-title: 'OTEnjoystoriesBA', sans-serif;
+    --font-bold: 'GmarketSansBold', sans-serif;
+    --font-medium: 'GmarketSansMedium', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background-color: var(--bg-color); width: 100%; }
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.5;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0;
+    margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);
+    white-space: nowrap; border: 0;
+}
+
+.btn {
+    border: none; cursor: pointer;
+    font-family: var(--font-bold);
+    font-size: 18px;
+    padding: 14px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+.btn:active { transform: translateY(2px); box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
+.btn-yellow { background-color: var(--yellow-color); color: var(--bg-color); }
+.btn-white { background-color: var(--white-color); color: var(--bg-color); }
+
+.header {
+    position: relative; margin-bottom: 60px;
+    width: 100%; max-width: 500px;
+    display: flex; flex-direction: column; align-items: center;
+}
+.title-box {
+    position: relative; display: flex;
+    justify-content: center; align-items: center;
+    margin-bottom: 20px; width: 100%;
+}
+.title-img { width: 100%; max-width: 400px; }
+.quote-txt {
+    font-family: var(--font-title); color: #FCEE21;
+    margin-top: 10px; font-size: 18px; text-align: center;
+    word-break: keep-all;
+}
+
+
+.intro { margin-bottom: 60px; width: 100%; display: flex; justify-content: center; }
+.quote-box { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.q-img { width: 36px; height: auto; flex-shrink: 0; }
+.desc {
+    font-family: var(--font-main); font-size: 16px;
+    line-height: 1.8; text-align: center;
+}
+.desc strong { font-family: var(--font-bold); font-size: 18px; }
+
+.inputs {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 24px; margin-bottom: 60px;
+    width: 100%; max-width: 500px;
+}
+.field {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; align-items: center;
+    gap: 10px;
+    font-family: var(--font-main); font-size: 16px; line-height: 1.5;
+}
+
+.time-field .txt:first-of-type {
+    width: 100%;
+    margin-bottom: 4px; 
+    text-align: center;
+}
+
+.txt { white-space: nowrap; }
+
+.inp {
+    border: none; border-radius: 8px;
+    padding: 10px 16px; text-align: center;
+    font-family: var(--font-main); font-size: 16px;
+    width: 160px;
+}
+.inp::placeholder { color: #BABCBE; }
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;            
+}
+
+.start-btn {
+    margin-top: 0; 
+    font-size: 16px;
+    display: block; 
+}
+.click-icon {
+    width: 32px;
+    height: auto;
+    cursor: pointer;
+}
+
+.result { 
+    margin-bottom: 60px; width: 100%;
+    display: flex; flex-direction: column; align-items: center; 
+}
+.res-txt {
+    font-family: var(--font-main); font-size: 18px;
+    margin-bottom: 30px; line-height: 1.8; text-align: center;
+    word-break: keep-all;
+}
+.accent { font-family: var(--font-bold); font-size: 24px; vertical-align: baseline; }
+
+.btn-wrap { 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px; 
+    justify-content: center; 
+}
+
+.footer { font-size: 10px; color: #ccc; line-height: 1.5; text-align: center; }
+.logo { width: 100px; margin-bottom: 16px; }
+
+.modal {
+    display: none; position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%; z-index: 100;
+    justify-content: center; align-items: center;
+}
+.modal.show { display: flex; }
+
+.cont {
+    position: relative; background-color: var(--white-color);
+    padding: 40px 30px; border-radius: 20px;
+    text-align: center; width: 90%; max-width: 500px;
+    color: var(--bg-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+.tit { font-family: var(--font-title); font-size: 36px; margin-bottom: 8px; }
+.tit span { font-size: 0.8em; }
+.licat { max-width: 100%; height: auto; margin-bottom: 24px; }
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 0;
+        font-size: 16px;
+    }
+    
+    .title-img { max-width: 560px; }
+    .quote-txt { font-size: 36px; margin-top: 20px; }
+
+    .desc { font-size: 20px; }
+    .desc strong { font-size: 24px; }
+    .q-img { width: 56px; }
+    .quote-box { gap: 24px; }
+
+    .inputs { max-width: 1000px; }
+    
+    .field { font-size: 20px; flex-wrap: nowrap; }
+    .time-field .txt:first-of-type { width: auto; margin-bottom: 0; }
+    
+    .inp { width: 250px; padding: 12px 20px; font-size: 20px; }
+    
+    .start-btn {
+        font-size: 22px;
+        padding: 16px 40px;
+    }
+    .click-icon {
+        width: 40px;
+    }
+    .res-txt { font-size: 24px; }
+    .accent { font-size: 48px; }
+    /* PC에서도 버튼 가로 배치 유지 */
+    .btn-wrap { flex-direction: row; }
+
+    .cont { max-width: 600px; padding: 60px 80px; }
+    .tit { font-size: 60px; }
+}
